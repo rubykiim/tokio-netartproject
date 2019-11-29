@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(40,40,40);
+}
+
+#pink {
+  color: #d28577;
+}
+
+#green {
+  color: #688d7f;
+}
+
+p {
+  color: rgb(252,236,215);
+  font-size: 40px;
+  font-family: 'Rasa', serif;
+
+  position: absolute;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .08em;
+}
+
+#qt-1 {
+  top: 7%;
+  left: 17%;
+
+  animation: typing 6s steps(90, end) forwards;
+}
+
+#qt-2 {
+  top: 17%;
+  left: 37.5%;
+
+  animation: typing 6s steps(90, end) 2.5s forwards;
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 58%;
+  left: 89%;
+
+  opacity: 0;
+  animation: showButton 0.8s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes showButton {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  #train{
+    position:absolute;
+    width:30%;
+    height:50%;
+    top:200px;
+    left:34.5%;
+
+    opacity: 0;
+    animation: showTrain 13s ease 1s forwards;
+  }
+
+
+  @keyframes showTrain {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes typing{
+    from {
+      opacity: 1;
+      width: 0;
+      }  to {
+        width: 100%;
+        opacity:1;
+      }
+    }

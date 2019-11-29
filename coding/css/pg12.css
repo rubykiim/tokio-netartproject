@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  /* background-color: rgb(40,40,40); */
+
+  background: linear-gradient(270deg, #a84d4d, #121003);
+  background-size: 400% 400%;
+
+  animation: changeBg 4s ease forwards;
+}
+
+@keyframes changeBg {
+    0% {
+      background-position:65% 0%
+    } 100% {
+      background-position:25% 100%
+    }
+}
+
+#dot {
+color: #d28577;
+}
+
+#comma {
+color: #688d7f; //green//
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+
+  opacity: 0;
+  animation: showButton 3s linear infinite forwards;
+  animation-delay: 8s;
+}
+
+p {
+  color: #ffecd4;
+  font-size: 35px;
+  font-family: 'Rasa', serif;
+
+  position: absolute;
+  left: 10%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .08em;
+}
+
+#qt1 {
+  top: 20%;
+
+  animation: typing 5s steps(90, end) forwards;
+}
+
+#qt2 {
+  top: 30%;
+
+  animation: typing 5s steps(90, end) 1s forwards;
+}
+
+#qt3 {
+  top: 60%;
+
+  animation: typing 7s steps(90, end) 4.5s forwards;
+}
+
+@keyframes typing{
+  from {
+    opacity: 1;
+    width: 0;
+    }  to {
+      width: 100%;
+      opacity:1;
+    }
+  }
+
+  @keyframes showButton {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,83 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(40,40,40);
+  animation: fadeIn 3s ease;
+}
+
+body {
+  margin: 0;
+  background-image: url("../img/pg6-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+span {
+  color: #688d7f;
+}
+
+p {
+  color: #ffecd4;
+  font-size: 50px;
+  font-family: 'Rasa', serif;
+
+  position: absolute;
+  top: 39%;
+  left: 33%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .1em;
+  animation: typing 8s steps(90, end) forwards;
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 41%;
+  left: 68%;
+
+  opacity: 0;
+  animation: showButton 2s linear 3s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes typing{
+    from {
+      opacity: 1;
+      width: 0;
+      }  to {
+        width: 100%;
+        opacity:1;
+      }
+    }
+
+    @keyframes showButton {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }

@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(40,40,40);
+  animation: fadeIn 10s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+#pink {
+  color: #d28577;
+}
+
+#green {
+  color: #688d7f;
+}
+
+p {
+  color: #ffecd4;
+  font-size: 40px;
+  font-family: 'Rasa', serif;
+
+  position: absolute;
+  z-index: 1;
+}
+
+#qt1 {
+  top: 35%;
+  left: 25%;
+
+  animation: hideQuote 1s ease forwards;
+  animation-delay: 5.6s;
+}
+
+@keyframes hideQuote {
+  from {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 30.5%;
+  left: 62%;
+  z-index: 3;
+
+  opacity: 0;
+  animation: showButton 3s linear 9s infinite;
+}
+
+@keyframes showButton {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+#qt2 {
+  font-size: 55px;
+
+  top: 13%;
+  left: 35%;
+
+  opacity: 0;
+  animation: showQuote 1s ease forwards;
+  animation-delay: 5.6s;
+}
+
+#qt3 {
+  top: 25%;
+  left: 35%;
+  opacity: 0;
+  animation: showQuote 1s ease forwards;
+  animation-delay: 8s;
+}
+
+@keyframes showQuote {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+#mark{
+  width: 20%;
+  height: 60%;
+
+  position:absolute;
+  top: 1%;
+  left: 79%;
+  display: block;
+}
+
+@keyframes rotate {
+  from  {transform: rotate(9deg);}
+  to {transform: rotate(90000deg);}
+}
+
+#amuse1{
+  opacity: 0.4;
+  position:absolute;
+  top: 35%;
+  left: 55%;
+  display:block;
+
+  transform: rotate(9deg);
+  transform-origin: center;
+  animation-name: rotate;
+  animation-duration: 6000s;
+  animation-iteration-count: infinite;
+}
+
+#wheel {
+  width: 1000px;
+  height: 1000px;
+}

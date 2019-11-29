@@ -1,0 +1,133 @@
+html,body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(40,40,40);
+}
+
+span {
+  color: #688d7f;
+  font-size: 25px;
+}
+
+#pink {
+  color: #d28577;
+}
+
+#logo {
+  width: 32%;
+  height: 13%;
+  position: absolute;
+  top: 21%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+}
+
+#disclaimer {
+  color: #ffecd4;
+  opacity: 0.7;
+
+  font-family: 'Rasa', serif;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: left;
+
+  position: absolute;
+  top: 28%;
+  left: 7%;
+
+  animation: fadein 5s linear 0s;
+}
+
+#qt1 {
+  color: #ffecd4;
+  font-size: 40px;
+  font-family: 'Rasa', serif;
+  position: absolute;
+  top: 70%;
+  left: 65%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .1em;
+  animation: typing 10s steps(90, end) forwards;
+  animation-delay: 6s;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 70%;
+  left: 88%;
+
+  opacity: 0;
+  animation: showButton 2s linear infinite forwards;
+  animation-delay: 8.5s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 2247.100830078125px;
+  stroke-dashoffset: 2247.100830078125px;
+  animation: line-anim 4s linear forwards;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 589.0516357421875px;
+  stroke-dashoffset: 589.0516357421875px;
+  animation: line-anim 4s linear forwards 0.3s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 1387.4254150390625px;
+  stroke-dashoffset: 1387.4254150390625px;
+  animation: line-anim 4s linear forwards 0.6s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 614.16943359375px;
+  stroke-dashoffset: 614.16943359375px;
+  animation: line-anim 4s linear forwards 0.9s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 589.0516357421875px;
+  stroke-dashoffset: 589.0516357421875px;
+  animation: line-anim 3.7s linear forwards 0.9s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes showButton {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes typing{
+    from {
+      opacity: 1;
+      width: 0;
+      }  to {
+        width: 100%;
+        opacity:1;
+      }
+    }

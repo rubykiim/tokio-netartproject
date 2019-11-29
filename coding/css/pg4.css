@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(40,40,40);
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  span {
+    color:#688d7f;
+  }
+
+  #instruction {
+    color: rgb(205, 166, 160);
+    font-size: 23px;
+    font-family: 'Rasa', serif;
+
+    position: absolute;
+    top: 55%;
+    left: 71.4%;
+
+    opacity: 0;
+    animation: showInstruction 1.5s linear infinite;
+    animation-delay: 5s;
+  }
+
+  #that {
+    font-weight: bold;
+    color: #ffecd4;
+  }
+
+  #qt1,#qt2,#qt3 {
+    color: #ffecd4;
+    font-size: 40px;
+    font-family: 'Rasa', serif;
+
+    position: absolute;
+  }
+
+  #qt1 {
+    top: 20%;
+    left: 68%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    opacity: 0;
+    letter-spacing: .1em;
+    animation: typing 5s steps(90, end) forwards;
+  }
+
+  #qt1::first-letter {
+    font-size: 180%;
+  }
+
+  #qt2 {
+    top: 40%;
+    left: 68%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    opacity: 0;
+    letter-spacing: .1em;
+    animation: typing 5s steps(90, end) 2.5s forwards;
+  }
+
+  #qt3 {
+    top: 48%;
+    left: 68%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    opacity: 0;
+    letter-spacing: .1em;
+    animation: typing 5s steps(90, end) 3.8s forwards;
+  }
+
+  #letter1{
+    width: 850px;
+
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 22;
+  }
+
+  #letter2{
+    width: 850px;
+
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: none;
+    z-index: 2;
+  }
+
+  #back {
+    width: 2%;
+    height: 3%;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+  }
+
+  @keyframes typing{
+    from {
+      opacity: 1;
+      width: 0;
+      }  to {
+        width: 100%;
+        opacity:1;
+      }
+    }
+
+    @keyframes showInstruction {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }

@@ -1,0 +1,124 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(40,40,40);
+}
+
+#dad {
+  width: 58%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  opacity: 0.4;
+
+  animation: twink 2s infinite;
+}
+
+p {
+  /* color: #fff; */
+  color: #ffecd4;
+  font-family: 'Rasa', serif;
+  font-size: 42px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .08em;
+}
+
+#qt1 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+
+  animation: typing 5s steps(90, end) forwards;
+  /* animation-delay: 2s; */
+}
+
+#qt2 {
+  position: absolute;
+  top: 33%;
+  left: 3%;
+
+  animation: typing 5s steps(90, end) forwards;
+  animation-delay: 2s;
+}
+
+#qt3 {
+  position: absolute;
+  top: 41%;
+  left: 7%;
+
+  animation: typing 5s steps(90, end) forwards;
+  animation-delay: 4s;
+}
+
+#qt4 {
+  position: absolute;
+  top: 49%;
+  left: 12%;
+
+  animation: typing 5s steps(90, end) forwards;
+  animation-delay: 6s;
+}
+
+#qt5 {
+  position: absolute;
+  top: 57%;
+  left: 20%;
+
+  animation: typing 5s steps(90, end) forwards;
+  animation-delay: 8s;
+}
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 58%;
+  left: 89%;
+
+  opacity: 0;
+  animation: showButton 0.8s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes showButton {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+@keyframes typing{
+  from {
+    opacity: 1;
+    width: 0;
+    }  to {
+      width: 100%;
+      opacity:1;
+    }
+  }
+
+/* @keyframes twink { */
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3
+  }
+}

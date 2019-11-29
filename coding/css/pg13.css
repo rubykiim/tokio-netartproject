@@ -1,0 +1,106 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(157,82,80);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: rgb(60,60,60);
+  margin: 5% auto;
+  padding: 10px;
+  border: 3px solid #888;
+  border-radius: 15px;
+  width: 40%;
+  height: 70%;
+  position: relative;
+}
+
+.close {
+  /* font-family: 'Patua One', cursive; */
+  font-family: 'Staatliches', cursive;
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#green {
+  color: #688d7f;
+}
+
+#pink {
+  color: #d28577;
+}
+
+#tokio {
+  position: absolute;
+  top: 22%;
+  left: 35%;
+
+  width: 35%;
+  height: 45%;
+}
+
+#headline {
+  font-size: 35px;
+  color: rgb(252,236,215);
+  text-align: center;
+  font-family: 'Patua One', cursive;
+  position: absolute;
+  top: 0%;
+  left: 6.5%;
+}
+
+#case {
+  color: rgb(252,236,215);
+  font-family: 'Patua One', cursive;
+  font-weight: lighter;
+  font-size: 30px;
+  position: absolute;
+  top: 67%;
+  left: 0%;
+
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #688d7f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#news {
+  position: absolute;
+  z-index: 0;
+  left: 25%;
+}
+
+#news img{
+  width: 80%;
+}

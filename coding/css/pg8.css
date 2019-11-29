@@ -1,0 +1,253 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(40,40,40);
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  #pink {
+    color: #d28577;
+  }
+
+  #green {
+    color: #688d7f;
+  }
+
+
+  #back {
+    width: 2%;
+    height: 3%;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+  }
+
+  #next {
+    width: 3%;
+    height: 5%;
+    position: absolute;
+    z-index: 3;
+    top: 59%;
+    left: 87%;
+
+    /* opacity: 0;
+    animation: showButton 0.8s linear forwards;
+    animation-delay: 3s; */
+  }
+
+  #mom {
+    width: 58%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    z-index: 1;
+    /* display: none; */
+    /* animation: twink 2s infinite; */
+  }
+
+  #dad {
+    margin: 0
+    width: 58%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    opacity: 0;
+    /* display: none; */
+
+    z-index: 2;
+  }
+
+  #momtext {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+  }
+
+  #dadtext {
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: none;
+  }
+
+  p {
+    margin: 0;
+    padding: 10px;
+    color: #ffecd4;
+    font-family: 'Rasa', serif;
+    font-size: 42px;
+
+    /* display: none; */
+  }
+
+  #mqt4 {
+    top: 48%;
+    position: absolute;
+    left: 43%;
+  }
+
+  #mqt5 {
+    top: 65%;
+    position: absolute;
+    left: 18%;
+  }
+
+  #dqt5 {
+    position: absolute;
+    top: 63%;
+    left: 25%;
+  }
+
+  #rtear-1 {
+    width: 40%;
+    height: 35%;
+
+    display: none;
+
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    opacity: 0.2;
+    transform: rotate(-10deg);
+    /* animation: tear 0.5s linear 7s forwards; */
+  }
+
+  #rtear-2 {
+    width: 40%;
+    height: 25%;
+
+    display: none;
+
+    position: absolute;
+    top: 48%;
+    left: 14%;
+
+    opacity: 0.2;
+    transform: rotate(-10deg);
+    /* animation: tear 0.5s linear 4s forwards; */
+  }
+
+  #rtear-3 {
+    width: 40%;
+    height: 35%;
+
+    display: none;
+
+    position: absolute;
+    top: 65%;
+    left: 14%;
+    opacity: 0.2;
+    transform: rotate(-10deg);
+    /* animation: tear 0.5s linear 10s forwards; */
+  }
+
+  #gtear-1 {
+    width: 20%;
+    height: 35%;
+
+    /* display: none; */
+
+    position: absolute;
+    top: 40%;
+    left: 54%;
+    opacity: 0.4;
+    transform: rotate(-10deg);
+    /* animation: tear 0.5s linear 7s forwards; */
+  }
+
+  #gtear-2 {
+    width: 40%;
+    height: 25%;
+
+    /* display: none; */
+
+    position: absolute;
+    top: 48%;
+    left: 54%;
+
+    opacity: 0.4;
+    transform: rotate(-10deg);
+    /* animation: tear 0.5s linear 4s forwards; */
+  }
+
+  #gtear-3 {
+    width: 40%;
+    height: 35%;
+
+    /* display: none; */
+
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    opacity: 0.4;
+    transform: rotate(-10deg);
+    /* animation: tear 0.5s linear 10s forwards; */
+  }
+  /* @keyframes typing{
+  from {
+  opacity: 1;
+  width: 0;
+  }  to {
+  width: 100%;
+  opacity:1;
+}
+} */
+
+@keyframes twink {
+  0% {
+    opacity: 0.3;
+    } 50% {
+      opacity: 1;
+      } 100% {
+        opacity: 0.3
+      }
+    }
+
+    @keyframes tear {
+      from {
+        opacity: 0.7;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes tear1 {
+      0% {
+        opacity: 0.4;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  @keyframes showButton {
+    from {
+      opacity: 0;
+      } to {
+        opacity: 1;
+      }
+    }

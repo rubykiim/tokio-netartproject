@@ -1,0 +1,95 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(40,40,40);
+  animation: fadeIn 4.5s ease;
+}
+
+p {
+  width: 100%;
+}
+
+#pink {
+  color: #d28577;
+}
+
+#green {
+  color: #688d7f;
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 46%;
+  left: 85%;
+
+  opacity: 0;
+  animation: showButton 1.5s linear infinite;
+  animation-delay: 8.7s;
+}
+
+#qt4{
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  /* color: #fff; */
+  color: #ffecd4;
+  font-size: 45px;
+  font-family: 'Rasa', serif;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .1em;
+  animation: typing 9s steps(90, end) forwards;
+}
+
+#qt5{
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  /* color: #fff; */
+  color: #ffecd4;
+  font-size: 45px;
+  font-family: 'Rasa', serif;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .1em;
+  animation: typing 8s steps(90, end) forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes typing{
+  from {
+    opacity: 1;
+    width: 0;
+    }  to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes showButton {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

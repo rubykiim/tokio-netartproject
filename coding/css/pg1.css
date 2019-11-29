@@ -1,0 +1,107 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(230,230,245);
+  /* background-color: lightgrey; */
+  animation: fadeIn 5s ease;
+}
+
+.pg1 {
+  scroll-behavior: smooth;
+}
+
+#dot {
+  color: #d28577;
+}
+
+#comma {
+  color: #688d7f;
+}
+
+#qt1 {
+  color: #ffecd4;
+  font-size: 50px;
+  font-family: 'Rasa', serif;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: typing 8s steps(90, end) forwards;
+}
+
+#qt2 {
+  color: #ffe6cd;
+  font-size: 50px;
+  font-family: 'Rasa', serif;
+  position: absolute;
+  top: 43%;
+  left: 27%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  letter-spacing: .1em;
+  animation: typing 5s steps(90, end) forwards;
+  animation-delay: 3s;
+}
+
+p {
+  color: #ffe6cd;
+  font-size: 28px;
+  font-family: 'Calligraffitti', cursive;
+}
+
+#back {
+  width: 2%;
+  height: 3%;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+
+#next {
+  width: 3%;
+  height: 5%;
+  position: absolute;
+  top: 44.5%;
+  left: 78.5%;
+
+  opacity: 0;
+  animation: showButton 2s linear infinite;
+  animation-delay: 5.8s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes typing{
+    from {
+      opacity: 1;
+      width: 0;
+      }  to {
+        width: 100%;
+        opacity:1;
+      }
+    }
+
+    @keyframes showButton {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
